@@ -26,6 +26,8 @@ const passport = require.main.require('passport');
 const nconf = require.main.require('nconf');
 const winston = require.main.require('winston');
 
+nconf.env({ separator: '__', lowerCase: true });
+
 /**
 	 * REMEMBER
 	 *   Never save your OAuth Key/Secret or OAuth2 ID/Secret pair in code! It could be published and leaked accidentally.
